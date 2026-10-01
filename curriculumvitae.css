@@ -1,0 +1,75 @@
+*{font-family: sans-serif;}
+header {
+    background-color: #8baec1;
+
+    text-align: center;
+    color: white;
+}
+
+header > table{
+    width: 100%;
+    background-color: #6a8695;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    border-style: solid;
+
+}
+
+h2{margin-left: 15%;}
+
+aside > div:first-child{
+    background-color: white;
+
+}
+
+aside h4{ margin-left: 10%;}
+
+aside details{margin-left: 10%;}
+
+aside img{
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+aside {
+    font-size: 12px;
+    background-color: #b8c7cf;
+    float:left;
+    width: 200px;
+    height: 1000px;
+}
+
+#deskribapena{
+    margin-right: 10%;
+    margin-left: 0%;
+}
+
+#ikasketak{margin-top: 5%;}
+
+#ikasketak > table{
+    width: 700px;
+    margin-left: 30%;
+    
+    border-collapse: collapse;
+    border-radius: 5%;
+}
+
+#ikasketak tr:nth-child(even){
+    background-color: #b8c7cf;
+}
+
+#ikasketak th{
+    border-style: solid;
+    text-transform: uppercase;
+}
+
+#ikasketak td{padding: 1%;}
+
+#gaitasunak ul{column-count: 2;}
+
+#gaitasunak li{
+    margin-left: 15%;
+    padding: 1%;
+    list-style-type: square;
+}
+
