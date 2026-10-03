@@ -1,75 +1,132 @@
-*{font-family: sans-serif;}
-header {
-    background-color: #8baec1;
+*{
+    font-family: sans-serif;        /*letraren iturria ezartzen eta esteken azpimarrapena kentzen*/
+    text-decoration: none;
+}
 
+header {
+    background-color: #8baec1;  /*header-aren kolorea, testuaren kolorea eta kokapena ezartzen*/
     text-align: center;
     color: white;
 }
 
+#nabigaziobarra a{text-transform: uppercase;}   /*header-ean dauden link guztiak larriz idatzita*/
+
+header a:visited{color: white;}
+header a:link{color: white;}                /*header-ean dauden kolorea bisitatzen denean, bisitatu gabe dagoenean eta gainetik pasatzerakoan edukiko duen kolorea ezartzen*/
+header a:hover{color: #353535;}
+
 header > table{
     width: 100%;
-    background-color: #6a8695;
+    background-color: #6a8695;              /*menuaren koloreak eta marginak zehazten*/
     margin-bottom: 0%;
     padding-bottom: 0%;
     border-style: solid;
 
 }
 
-h2{margin-left: 15%;}
+h2{margin-left: 15%;}                           /*h2 guztien margina %15 izan behar da*/
+
+aside a:link{color: black;}                 /*guebunearen linkaren koloreak zehazten*/
+
+aside a:hover{
+    color:#353535;
+    font-style: italic;
+}
 
 aside > div:first-child{
-    background-color: white;
+    background-color: white;                /*nere argazkiaren atalaren atzeko kolorea erabakitzen*/
 
 }
 
-aside h4{ margin-left: 10%;}
+aside h4{ margin-left: 5%;}                 /*h4 guztien margina %5*/
 
-aside details{margin-left: 10%;}
+aside details{margin-left: 5%;}            /*informazio gehiago atalaren listen margina %5*/
 
 aside img{
-    padding-bottom: 10%;
+    padding-bottom: 10%;                    /*nere argazkiaren padding-a %10 goiko menutik eta beheko informaziotik bereizteko*/
     padding-top: 10%;
 }
 
 aside {
     font-size: 12px;
     background-color: #b8c7cf;
-    float:left;
+    float:left;                             /*ezkerraldean dagoen informazioaren zutabearen kolorea, luzeera eta zabalera zehazten*/
     width: 200px;
-    height: 1000px;
+    height: 1500px;
+}
+
+aside li{padding: 5%;                       /*informaziaren zutabearen listen padding a %5-era aldatzen eta listen sailkapena zehazten*/
+list-style-type: none;}
+
+aside details{padding: 5%}                  /*informazio gehiagoren atalean dauden listen padding-a %5 era ezartzen*/
+
+
+section > h2{
+    text-transform: uppercase;              /*orri nagusiaren izenburu guztiak handiz idatzita*/
 }
 
 #deskribapena{
-    margin-right: 10%;
+    margin-right: 10%;                      /*deskribapen laburraren marginak zehazten*/
     margin-left: 0%;
 }
 
-#ikasketak{margin-top: 5%;}
+#ikasketak{margin-top: 5%;}                 /*deskribapenetik atal guztiak separatzen*/
 
 #ikasketak > table{
     width: 700px;
-    margin-left: 30%;
-    
+    margin-left: 30%;                       /*ikasketen taularen zabalera, margina eta gelaxken hertzak zehazten*/
+                                            
     border-collapse: collapse;
     border-radius: 5%;
 }
 
-#ikasketak tr:nth-child(even){
+#ikasketak tr:nth-child(even){              /*bikoitiak diren errenkadei kolorea aldatzen*/
     background-color: #b8c7cf;
 }
 
 #ikasketak th{
-    border-style: solid;
+    border-style: solid;                    /*tauñlaren izenburuen hertzak eta testuaren forma zehazten*/
     text-transform: uppercase;
 }
 
-#ikasketak td{padding: 1%;}
+#ikasketak td{padding: 1%;}                 /*taularen gelazken padding-a %1-era ezartzen*/
 
 #gaitasunak ul{column-count: 2;}
 
 #gaitasunak li{
-    margin-left: 15%;
+    margin-left: 15%;                       /*zerrendaren item-en margina, padding-a eta formatua zehazten*/
     padding: 1%;
     list-style-type: square;
 }
 
+#afizioaketainteresak ul{column-count: 2;}  /*zutabe kopurua jartzen*/
+
+#afizioaketainteresak li{
+    margin-left: 15%;
+    padding: 1%;                             /*zerrendaren item-en margina, padding-a eta formatua zehazten*/
+    list-style-type: disc;
+
+}
+
+#liburuak ul{column-count: 2;}              /*zutabe kopurua jartzen*/
+
+#liburuak li{
+    margin-left: 15%;                        /*zerrendaren item-en margina, padding-a eta formatua zehazten*/
+    padding: 1%;
+    list-style-type: lower-roman;
+}
+
+#liburuak a:link{color: rgb(0, 0, 0);}
+
+#liburuak a:hover{                          /*guebunearen linkaren koloreak zehazten*/
+    color: dimgrey;
+    font-style: italic;
+}
+#liburuak a:visited{color: black;}
+
+#filmetatelesail img{
+    width: 200px;                           /*filmen argazkien dimensioak zehazten*/
+    height: 300px;
+}
+
+#filmetatelesail ol{column-count: 4;}       /*filmen zutabe kopurua zehazten*/
