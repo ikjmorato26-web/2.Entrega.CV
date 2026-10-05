@@ -129,4 +129,6 @@ section > h2{
     height: 300px;
 }
 
-#filmetatelesail ol{column-count: 4;}       /*filmen zutabe kopurua zehazten*/
+#filmetatelesail ol{column-count: 4;
+display: flex;
+}       /*filmen zutabe kopurua zehazten*/
